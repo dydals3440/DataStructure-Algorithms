@@ -11,14 +11,20 @@ def DFS(L, sum):
 
 
 if __name__ == "__main__":
+    # 지폐의 금액
     T = int(input())
+    # 동전의 종류 가지 수
     k = int(input())
+    # 동전 금액
     cv = list()
+    # 해당 금액의 동전의 개수
     cn = list()
+    # 입력 받아 각 리스트에 금액과 동전 개수 append
     for i in range(k):
         a, b = map(int, input().split())
         cv.append(a)
         cn.append(b)
+    # 개수를 세야 하므로 적어주기
     cnt = 0
     DFS(0, 0)
     print(cnt)
