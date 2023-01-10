@@ -24,7 +24,9 @@ if __name__ == "__main__":
         a, b = map(int, input().split())
         cv.append(a)
         cn.append(b)
-    # 개수를 세야 하므로 적어주기
+    # 개수를 세야 하므로 초기화
     cnt = 0
+    # DFS 실행
     DFS(0, 0)
+    # 출력
     print(cnt)
